@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body{
+
+   
+    font-family: "Poppins", sans-serif;
+    
+    
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  /* Ajuste a qualidade do logo e torne-o responsivo */
+.navbar-brand img {
+    max-width: 85%; /* Garante que o logo seja responsivo */
+    height: auto; /* Mantém a proporção do logo */
+}
+ 
+/* Aumenta o espaçamento entre os botões */
+.navbar-nav .nav-item {
+    margin-right: 20px; /* Ajuste o valor conforme necessário */
+}
+ 
+/* Ajusta o espaçamento para o botão "Entrar" */
+.navbar-nav .btn {
+    margin-left: 10px; /* Ajusta o valor conforme necessário */
+}
+ 
+/* Garantia de que o botão "Entrar" não se sobreponha aos itens do menu */
+.navbar-nav .btn-warning {
+    margin-left: 20px; /* Ajusta o valor conforme necessário */
+}
+ 
+/* Ajustes de responsividade para manter o layout organizado */
+@media (max-width: 992px) {
+    .navbar-nav {
+        margin-top: 10px; /* Ajuste o valor conforme necessário */
+    }
+}
+
+/* corpo do form */
+main.container {
+    background: #212529;
+    color: white;
+    min-width: 320px;
+    min-height: 40vh;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+/* campo login */
+main h3 {
+    font-weight: 400;
+    margin-bottom: 2rem;
+    position: relative;
+}
+/* linha de baixo do login */
+main h3::before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 278px;
+    bottom: 1px;
+    left: 0;
+    border-radius: 8px;
+    background: #88ff00;;
+}
+/* conteduo das caixas email-senha e enviar */
+form {
+    display: flex;
+    flex-direction: column;
+}
+/* posicao das caixas */
+.input-field {
+    position: relative;
+}
+/* caixa eamil */
+form .input-field:first-child {
+    margin-bottom: 1.5rem;
+}
+/* borda linha das caixas */
+.input-field .underline::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+   
+}
+/* linha ao clicar as caixas */
+.input-field .underline::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 5px;
+    background: #ffffff;
+    transform: scaleX(0);
+    transition: all .3s ease-in-out;
+    transform-origin: left;
+}
+.input-field input:focus ~ .underline::after {
+    transform: scaleX(1);
+}
+/* campo dentro da senha e do email */
+.input-field input {
+    outline: none;
+    font-size: 0.9rem;
+    color: white;
+    background-color: transparent;
+    width: 100%;
+}
+/* campo de senha e email */
+.input-field input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+/* botao do form */
+form input[type="submit"] {
+    margin-top: 2rem;
+    padding: 0.4rem;
+    width: 100%;
+    background: #FFFF00;
+    cursor: pointer;
+    color: black;
+    font-size: 0.9rem;
+    font-weight: 300;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+#google{
+    margin-top: 2rem;
+    padding: 0.4rem;
+    width: 100%;
+    background: #FFFF00;
+    cursor: pointer;
+    color: black;
+    font-size: 0.9rem;
+    font-weight: 300;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.whats {
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+    z-index: 9999;
+
+}
+
+
+
+
+#cardteste {
+   margin: auto;
+   max-height: 30%;
+   min-height: 30%;
+   
+    display: inline-block;
+    border: solid 1px black;
+    border-radius: 20px;
+    box-shadow: 60px 100px 80px rgba(0, 0, 0, 0.1);
+    transition: 0.5s ease-in-out;
+
+    overflow: hidden;
+
+}
+
+#cardteste:hover{
+    transform: scale(1.2);
+    background-color: green;
+    color: white;
+
+}
+#sobre{
+    color: white;
+   
+    }
+
+
+
+#logoinsta {
+    left: 0;
+    margin-left: -25;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    margin: 5rem 0 5rem 0;
+
+}
+
+#cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    max-width: 1390px;
+    margin: 0 auto;
+    grid-gap: 40px;
+    margin-bottom: 50px;
+
+}
+
+.cardava{
+    justify-content: center;
+align-items: center;
+display: flex;
+text-align: center;
+margin: auto;
+    padding: 10PX -4px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    box-shadow: 6px 6px 10px #222222;
+
+}
+.cardava.user{
+    width: 10px;
+    
+    border-radius: 55%;
+    margin-bottom: 15px;
+    
+    
+}
+.user{
+   border-radius: 100%;
+   width: 125px;
+   margin: 15px;
+}
+.coment{
+    margin: 15px;
+    font-size: 20px;
+}
+.cardava h3{
+    margin-bottom: 5px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    background-color: green;
+    border-radius: 70%; /* Faz o botão ficar circular */
+    width: 70px; /* Define o tamanho do botão */
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:300px;
+    margin-left: 20px;;
+    margin-right: 20px;
+    transition: transform 0.8s ease;
+}
+ 
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 40px; /* Ajusta o tamanho do ícone */
+    height: 40px;
+}
+.carousel-control-prev:active, .carousel-control-next:active {
+    transform: scale(1.0); /* Encolhe um pouco o botão ao clicar */
+    background-color: rgb(0, 8, 0);}/* Muda a cor durante o clique */
+   
+    .carousel-control-prev:hover, .carousel-control-next:hover {
+        transform: rotate(360deg);}
+
+        .avaliacao{
+            display:flex;
+        }
+         
+        .star-icon {
+            width:20px ;
+           height: 20px;
+          list-style-type: none;
+          border: 1px solid #fff;
+          cursor: pointer;
+          color: #FFE500;
+          font-size: 40px;
+          margin-left: 20px;;
+          margin-right: 20px;
+        }
+         
+         
+        .star-icon::before {
+            content: "\2605";
+        }
+         
+        .star-icon.ativo ~ .star-icon::before {
+            content: "\2606";
+        }
+         
+        .avaliacao:hover .star-icon::before{
+            content: "\2605";
+        }
+         
+        /* .star-icon:hover ~ .star-icon::before {
+            content: "\2606"; */
+          
+            .star-icon:hover{
+                transform: translateY(-10px); 
+            }
+             
+            .star-icon:hover ~ .star-icon::before {
+                content: "\2606"; 
+            }
+        
+#contato{
+    font-size: 33px;
+}
